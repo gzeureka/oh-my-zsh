@@ -1,6 +1,7 @@
-#local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ %s)" local ret_status="%(?:%{$fg_bold[green]%}𝜆:%{$fg_bold[red]%}𝜆%s)"
+# local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ %s)"
+# local ret_status="%(?:%{$fg_bold[green]%}𝜆:%{$fg_bold[red]%}𝜆%s)"
 #PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
-PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)$(git_commits_ahead)$(git_commits_behind)%{$fg_bold[blue]%}% %{$reset_color%}$ '
+PROMPT='${ret_status}%M%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)$(git_commits_ahead)$(git_commits_behind)%{$fg_bold[blue]%}% %{$reset_color%}$ '
 
 # git_prompt_info
 ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
